@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A Gift For You ❤️</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: white;
+  text-align: center;
+}
+
+#gift {
+  margin-top: 30vh;
+  cursor: pointer;
+  font-size: 30px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+.message {
+  max-width: 700px;
+  margin: 30px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+iframe {
+  margin: 20px;
+  border-radius: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="gift" onclick="openGift()">
+🎁 Tap to open your New Year gift ❤️
+</div>
+
+<div id="content" class="hidden">
+
+<h1>Happy New Year, My Love 🎆❤️</h1>
+
+<div class="message">
+This year was special because **you were in it**.  
+Every smile, every memory, every moment with you means the world to me.  
+No matter where life takes us, **you’ll always be my favorite part of it**.  
+Here’s to more memories, more laughter, and more love in 2026 🤍✨
+</div>
+
+<h2>Our Memories 📸</h2>
+<div class="gallery">
+  <img src="1.jpg">
+  <img src="2.jpg">
+  <img src="3.jpg">
+  <img src="4.jpg">
+</div>
+
+<h2>Our Songs 🎶</h2>
+<iframe width="300" height="170" src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+<iframe width="300" height="170" src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+
+<p style="margin-top:40px;">Forever yours ❤️</p>
+
+</div>
+
+<script>
+function openGift() {
+  document.getElementById("gift").style.display = "none";
+  document.getElementById("content").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
