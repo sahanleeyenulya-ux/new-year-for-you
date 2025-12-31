@@ -3,19 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <title>A Gift For You ❤️</title>
+
 <style>
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #000000, #1a1a1a);
+  background: radial-gradient(circle at top, #2b1055, #000000);
   color: white;
   text-align: center;
 }
 
 #gift {
-  margin-top: 30vh;
+  margin-top: 35vh;
+  font-size: 32px;
   cursor: pointer;
-  font-size: 30px;
   animation: pulse 1.5s infinite;
 }
 
@@ -29,41 +30,87 @@ body {
   display: none;
 }
 
-.gallery img {
-  width: 250px;
-  border-radius: 15px;
-  margin: 10px;
+h1 {
+  margin-top: 30px;
+  font-size: 36px;
 }
 
 .message {
   max-width: 700px;
-  margin: 30px auto;
+  margin: 20px auto;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
+  opacity: 0.9;
 }
 
-iframe {
-  margin: 20px;
-  border-radius: 15px;
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 240px;
+  border-radius: 18px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.25);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.songs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.song-card {
+  background: rgba(255,255,255,0.12);
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 25px rgba(255,255,255,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.song-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(255,105,180,0.6);
+}
+
+.song-card p {
+  font-size: 14px;
+  opacity: 0.8;
 }
 </style>
 </head>
 
 <body>
 
+<!-- GIFT SCREEN -->
 <div id="gift" onclick="openGift()">
 🎁 Tap to open your New Year gift ❤️
 </div>
 
+<!-- MAIN CONTENT -->
 <div id="content" class="hidden">
 
 <h1>Happy New Year, My Love 🎆❤️</h1>
+<p style="opacity:0.8;">I made this just for you, with all my heart 🤍</p>
 
 <div class="message">
-This year was special because **you were in it**.  
-Every smile, every memory, every moment with you means the world to me.  
+This year became special because **you were in it**.  
+Every smile, every conversation, every memory with you means more than you know.  
 No matter where life takes us, **you’ll always be my favorite part of it**.  
-Here’s to more memories, more laughter, and more love in 2026 🤍✨
+Here’s to more love, more laughter, and more *us* in the year ahead ✨
 </div>
 
 <h2>Our Memories 📸</h2>
@@ -75,22 +122,19 @@ Here’s to more memories, more laughter, and more love in 2026 🤍✨
 </div>
 
 <h2>Our Songs 🎶</h2>
-
 <div class="songs">
   <a href="https://youtu.be/e1mOmdykmwI" target="_blank" class="song-card">
-    🎵 Our First Song  
-    <p>Tap to listen on YouTube ❤️</p>
+    🎵 Our Song  
+    <p>Tap and listen… it always reminds me of you ❤️</p>
   </a>
 
   <a href="https://youtu.be/xtAuOIhXf0I" target="_blank" class="song-card">
-    🎶 Our Second Song  
-    <p>This one always reminds me of you ✨</p>
+    🎶 Another Memory  
+    <p>This one holds a special place in my heart ✨</p>
   </a>
 </div>
 
-
-
-<p style="margin-top:40px;">Forever yours ❤️</p>
+<p style="margin-bottom:40px; opacity:0.7;">Forever yours ❤️</p>
 
 </div>
 
@@ -103,3 +147,4 @@ function openGift() {
 
 </body>
 </html>
+
